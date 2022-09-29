@@ -12,7 +12,7 @@
 + Bootstrap, Less/Scss, Git
 + Кроссбраузерность
 
-<ul><h3>Мои контактные данные:</h3>
+<h3>Мои контактные данные:</h3>
   <li>Почта: <a href="mailto:aleh.antukh@gmail.com">website@azraelgf.ru</a></li>
   <li>Телеграм: <a href="https://t.me/azraelgf" target="_blank">@azraelgf</a></li>
   <li><a href="https://join.skype.com/invite/bJfs8iKJdib4" target="_blank">karleone_gf</a></li>

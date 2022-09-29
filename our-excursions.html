@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Наши экскурсии</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="/" class="header__logo logo animate__animated animate__delay-1s animate__lightSpeedInLeft"><img src="img/logo.svg" alt="Logo"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item animate__animated animate__lightSpeedInLeft animate__delay-1s"><a href="/" class="menu__link">Главная</a></li>
+							<li class="menu__item animate__animated animate__lightSpeedInLeft animate__delay-1s"><a href="our-excursions.html" class="menu__link">Экскурсии</a></li>
+							<li class="menu__item animate__animated animate__lightSpeedInLeft animate__delay-1s"><a href="#" class="menu__link">Личный кабинет</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page page-inner">
+			<section class="page-inner__excursions excursions">
+				<div class="excursions__container">
+					<h1 class="excursions__title page-title wow animate__fadeInUp">
+						НАШИ ЭКСКУРСИИ
+					</h1>
+				</div>
+			</section>
+			<section class="page-inner__filter-top wow animate__fadeInUp">
+				<div class="filter-top__container">
+					<div class="filter-top">
+						<div class="options">
+							<div class="options__item">
+								<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+								<label for="o_1" class="options__label">
+									<span class="options__text">АВТОБУСНЫЙ ТУР</span>
+								</label>
+							</div>
+							<div class="options__item">
+								<input id="o_2" class="options__input" type="radio" value="2" name="option">
+								<label for="o_2" class="options__label">
+									<span class="options__text">КАНЬОНИНГ</span>
+								</label>
+							</div>
+							<div class="options__item">
+								<input id="o_3" class="options__input" type="radio" value="1" name="option">
+								<label for="o_3" class="options__label">
+									<span class="options__text">ДЖИППИНГ</span>
+								</label>
+							</div>
+							<div class="options__item">
+								<input id="o_4" class="options__input" type="radio" value="2" name="option">
+								<label for="o_4" class="options__label">
+									<span class="options__text">ЯХТИНГ</span>
+								</label>
+							</div>
+						</div>
+						<form class="filter-top__form form-top-filter">
+							<label class="form-top-filter__item">
+								<input class="filter-top__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Абхазия">
+								<i class="_icon-loc"></i>
+							</label>
+							<label class="form-top-filter__item">
+								<input class="filter-top__input input" autocomplete="off" data-datepicker name="date" data-error="Ошибка" placeholder="10 ноября 2021">
+								<i class="_icon-shedule"></i>
+							</label>
+							<label class="form-top-filter__item">
+								<input class="filter-top__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="5 человек">
+								<i class="_icon-people"></i>
+							</label>
+							<button class="filter-top__btn button" type="submit">Показать</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page-inner__our-tours our-tours">
+				<div class="our-tours__container">
+					<form action="#" class="our-tours__filter filter wow animate__fadeInLeft">
+						<div data-spollers="992" class="spollers">
+							<div class="spollers__item filter__wrapper">
+								<button type="button" data-spoller class="spollers__title filter__title">Фильтры</button>
+								<div class="spollers__body">
+									<div data-spollers class="spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Стоимость</button>
+											<div class="spollers__body">
+												<div class="filter__inputs-box">
+													<input class="filter__input input" id="price-start" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="">
+													<input class="filter__input input" id="price-end" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="">
+												</div>
+												<div class="filter__range" id="range"></div>
+											</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Количество человек
+											</button>
+											<div class="spollers__body">
+												<div class="options">
+													<div class="options__item">
+														<input id="f_1" class="options__input" checked type="radio" value="1" name="people">
+														<label for="f_1" class="options__label">
+															<span class="options__text">1 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_2" class="options__input" type="radio" value="2" name="people">
+														<label for="f_2" class="options__label">
+															<span class="options__text">2 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_3" class="options__input" type="radio" value="1" name="people">
+														<label for="f_3" class="options__label">
+															<span class="options__text">3 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_4" class="options__input" type="radio" value="2" name="people">
+														<label for="f_4" class="options__label">
+															<span class="options__text">4 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_5" class="options__input" type="radio" value="1" name="people">
+														<label for="f_5" class="options__label">
+															<span class="options__text">5 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_6" class="options__input" type="radio" value="2" name="people">
+														<label for="f_6" class="options__label">
+															<span class="options__text">6 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_7" class="options__input" type="radio" value="1" name="people">
+														<label for="f_7" class="options__label">
+															<span class="options__text">7 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_8" class="options__input" type="radio" value="2" name="people">
+														<label for="f_8" class="options__label">
+															<span class="options__text">8 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_9" class="options__input" type="radio" value="2" name="people">
+														<label for="f_9" class="options__label">
+															<span class="options__text">9 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_10" class="options__input" type="radio" value="1" name="people">
+														<label for="f_10" class="options__label">
+															<span class="options__text">10 чел.</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="f_11" class="options__input" type="radio" value="2" name="people">
+														<label for="f_11" class="options__label">
+															<span class="options__text">Больше 10 чел.</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Место</button>
+											<div class="spollers__body">
+												<div class="options">
+													<div class="options__item">
+														<input id="p_1" class="options__input" checked type="radio" value="1" name="place">
+														<label for="p_1" class="options__label">
+															<span class="options__text">Абхазия</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="p_2" class="options__input" type="radio" value="2" name="place">
+														<label for="p_2" class="options__label">
+															<span class="options__text">Красная поляна</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="p_3" class="options__input" type="radio" value="1" name="place">
+														<label for="p_3" class="options__label">
+															<span class="options__text">Сочи</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="p_4" class="options__input" type="radio" value="2" name="place">
+														<label for="p_4" class="options__label">
+															<span class="options__text">Адлер</span>
+														</label>
+													</div>
+													<div class="options__item">
+														<input id="p_5" class="options__input" type="radio" value="1" name="place">
+														<label for="p_5" class="options__label">
+															<span class="options__text">Минск</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Длительность</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="c_0" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="days">
+													<label for="c_0" class="checkbox__label">
+														<span class="checkbox__text">1-3 дней</span>
+													</label>
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="days">
+													<label for="c_1" class="checkbox__label">
+														<span class="checkbox__text">3-5 дней</span>
+													</label>
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="days">
+													<label for="c_2" class="checkbox__label">
+														<span class="checkbox__text">более 5 дней</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__footer">
+										<button class="button filter__btn" type="submit">Показать</button>
+										<label class="filter__reset _icon-close" for="r-0">Сбросить фильтры
+											<input class="input__reset input" id="r-0" autocomplete="off" type="reset" name="form[]" data-error="Ошибка" placeholder=""></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="our-tours__content content-tours wow animate__fadeInRight">
+						<h2 class="content-tours__title title">Наши туры</h2>
+						<div class="content-tours__items">
+							<div class="content-tours__item item-tours-content">
+								<div class="item-tours-content__img -ibg"><picture><source srcset="img/our-excursion/01.webp" type="image/webp"><img src="img/our-excursion/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-tours-content__body">
+									<div class="item-tours-content__header">
+										<div class="item-tours-content__subtitle">Автобусный тур</div>
+										<h3 class="item-tours-content__title">Золотое кольцо Абхазии (из Адлера)</h3>
+									</div>
+									<div class="item-tours-content__info">
+										<div class="item-tours-content__total">
+											<div class="item-tours-content__price _icon-money">
+												1 618 ₽<span>Взрослый билет</span>
+											</div>
+											<div class="item-tours-content__price _icon-money">1 412 ₽<span>Детский билет</span>
+											</div>
+											<div class="item-tours-content__time _icon-time">2,5 часа</div>
+										</div>
+										<p class="item-tours-content__text">Вас ждет путешествие по "Золотому Кольцу
+											Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать
+											профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или
+											ближайшей автобусной остановки. Пересечение границы без пересадок...
+										</p>
+									</div>
+									<div class="item-tours-content__actions">
+										<a class="item-tours-content__btn button" href="excursion-single.html">Подробнее</a>
+										<button class="item-tours-content__favourite _icon-favorite"></button>
+									</div>
+								</div>
+							</div>
+							<div class="content-tours__item item-tours-content">
+								<div class="item-tours-content__img -ibg"><picture><source srcset="img/our-excursion/01.webp" type="image/webp"><img src="img/our-excursion/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-tours-content__body">
+									<div class="item-tours-content__header">
+										<div class="item-tours-content__subtitle">Автобусный тур</div>
+										<h3 class="item-tours-content__title">Золотое кольцо Абхазии (из Адлера)</h3>
+									</div>
+									<div class="item-tours-content__info">
+										<div class="item-tours-content__total">
+											<div class="item-tours-content__price _icon-money">
+												1 618 ₽<span>Взрослый билет</span>
+											</div>
+											<div class="item-tours-content__price _icon-money">1 412 ₽<span>Детский билет</span>
+											</div>
+											<div class="item-tours-content__time _icon-time">2,5 часа</div>
+										</div>
+										<p class="item-tours-content__text">Вас ждет путешествие по "Золотому Кольцу
+											Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать
+											профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или
+											ближайшей автобусной остановки. Пересечение границы без пересадок...
+										</p>
+									</div>
+									<div class="item-tours-content__actions">
+										<a class="item-tours-content__btn button" href="excursion-single.html">Подробнее</a>
+										<button class="item-tours-content__favourite _icon-favorite"></button>
+									</div>
+								</div>
+							</div>
+							<div class="content-tours__item item-tours-content">
+								<div class="item-tours-content__img -ibg"><picture><source srcset="img/our-excursion/01.webp" type="image/webp"><img src="img/our-excursion/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-tours-content__body">
+									<div class="item-tours-content__header">
+										<div class="item-tours-content__subtitle">Автобусный тур</div>
+										<h3 class="item-tours-content__title">Золотое кольцо Абхазии (из Адлера)</h3>
+									</div>
+									<div class="item-tours-content__info">
+										<div class="item-tours-content__total">
+											<div class="item-tours-content__price _icon-money">
+												1 618 ₽<span>Взрослый билет</span>
+											</div>
+											<div class="item-tours-content__price _icon-money">1 412 ₽<span>Детский билет</span>
+											</div>
+											<div class="item-tours-content__time _icon-time">2,5 часа</div>
+										</div>
+										<p class="item-tours-content__text">Вас ждет путешествие по "Золотому Кольцу
+											Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать
+											профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или
+											ближайшей автобусной остановки. Пересечение границы без пересадок...
+										</p>
+									</div>
+									<div class="item-tours-content__actions">
+										<a class="item-tours-content__btn button" href="excursion-single.html">Подробнее</a>
+										<button class="item-tours-content__favourite _icon-favorite"></button>
+									</div>
+								</div>
+							</div>
+							<div class="content-tours__item item-tours-content">
+								<div class="item-tours-content__img -ibg"><picture><source srcset="img/our-excursion/01.webp" type="image/webp"><img src="img/our-excursion/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-tours-content__body">
+									<div class="item-tours-content__header">
+										<div class="item-tours-content__subtitle">Автобусный тур</div>
+										<h3 class="item-tours-content__title">Золотое кольцо Абхазии (из Адлера)</h3>
+									</div>
+									<div class="item-tours-content__info">
+										<div class="item-tours-content__total">
+											<div class="item-tours-content__price _icon-money">
+												1 618 ₽<span>Взрослый билет</span>
+											</div>
+											<div class="item-tours-content__price _icon-money">1 412 ₽<span>Детский билет</span>
+											</div>
+											<div class="item-tours-content__time _icon-time">2,5 часа</div>
+										</div>
+										<p class="item-tours-content__text">Вас ждет путешествие по "Золотому Кольцу
+											Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать
+											профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или
+											ближайшей автобусной остановки. Пересечение границы без пересадок...
+										</p>
+									</div>
+									<div class="item-tours-content__actions">
+										<a class="item-tours-content__btn button" href="excursion-single.html">Подробнее</a>
+										<button class="item-tours-content__favourite _icon-favorite"></button>
+									</div>
+								</div>
+							</div>
+							<div class="content-tours__item item-tours-content">
+								<div class="item-tours-content__img -ibg"><picture><source srcset="img/our-excursion/01.webp" type="image/webp"><img src="img/our-excursion/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-tours-content__body">
+									<div class="item-tours-content__header">
+										<div class="item-tours-content__subtitle">Автобусный тур</div>
+										<h3 class="item-tours-content__title">Золотое кольцо Абхазии (из Адлера)</h3>
+									</div>
+									<div class="item-tours-content__info">
+										<div class="item-tours-content__total">
+											<div class="item-tours-content__price _icon-money">
+												1 618 ₽<span>Взрослый билет</span>
+											</div>
+											<div class="item-tours-content__price _icon-money">1 412 ₽<span>Детский билет</span>
+											</div>
+											<div class="item-tours-content__time _icon-time">2,5 часа</div>
+										</div>
+										<p class="item-tours-content__text">Вас ждет путешествие по "Золотому Кольцу
+											Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать
+											профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или
+											ближайшей автобусной остановки. Пересечение границы без пересадок...
+										</p>
+									</div>
+									<div class="item-tours-content__actions">
+										<a class="item-tours-content__btn button" href="excursion-single.html">Подробнее</a>
+										<button class="item-tours-content__favourite _icon-favorite"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pagination__wrapper">
+							<button class="prev-page" disabled>
+								<i class="_icon-sl_arrow"></i>
+							</button>
+							<div id="pagination"></div>
+							<button class="next-page">
+								<i class="_icon-sl_arrow"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container wow animate__animated animate__fadeInUp">
+				<a href="/" class="footer__logo logo"><picture><source srcset="img/logo-f.webp" type="image/webp"><img src="img/logo-f.png" alt="Logo"></picture></a>
+				<div class="footer__menu footer-menu">
+					<nav class="footer-menu__body">
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Главная</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Экскурсии</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Личный кабинет</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<a href="tel:79649441874" class="contacts-footer__item _icon-tg">+7 964 944 18 74</a>
+					<a href="tel:79189199828" class="contacts-footer__item _icon-wp">+7 918 919 98 28</a>
+					<a href="" class="contacts-footer__item _icon-tg">Телеграм-бот PeroTravel</a>
+				</div>
+				<div class="footer__social social-footer">
+					<a href="mailto:office@perotravel.ru" class="social-footer__mail _icon-mail">office@perotravel.ru</a>
+					<div class="social-footer__social social-footer">
+						<ul class="social-footer__list">
+							<li class="social-footer__item"><a href="" class="social-footer__link _icon-fb"></a></li>
+							<li class="social-footer__item"><a href="" class="social-footer__link _icon-vk"></a></li>
+							<li class="social-footer__item"><a href="" class="social-footer__link _icon-inst"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div data-youtube-place class="popup__text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

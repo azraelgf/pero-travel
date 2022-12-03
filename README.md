@@ -16,4 +16,4 @@
 <li>Почта: <a href="mailto:aleh.antukh@gmail.com">website@azraelgf.ru</a></li>
 <li>Телеграм: <a href="https://t.me/azraelgf" target="_blank">@azraelgf</a></li>
 <li>WhatsApp: <a href="https://wa.me/375298977987" target="_blank">+375298977987</a></li>
-<li><a href="https://join.skype.com/invite/bJfs8iKJdib4" target="_blank">karleone_gf</a></li>
+<li>Skype: <a href="https://join.skype.com/invite/bJfs8iKJdib4" target="_blank">karleone_gf</a></li>
